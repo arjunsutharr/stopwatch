@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: #ffffff;
+}
+
+.stopwatch {
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+#display-timer {
+  font-size: 6rem;
+  margin-top: 8vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.stopwatch-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #ffffff;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 5px;
+  border-color: #ffffff;
+  min-width: 60%;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: black;
+  transition: linear 0.3s;
+}
+
+#lap-list {
+  overflow-y: auto;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* scroll bar style  */
+
+ol {
+  padding-inline-start: 0px;
+}
+
+#lap-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+#lap-list::-webkit-scrollbar-thumb {
+  background-color: grey;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+#lap-list li {
+  text-align: center;
+  color: grey;
+}
+
+/* Media quries for responsiveness */
+
+@media (width <= 950px) {
+  button {
+    min-width: 50%;
+  }
+}
+
+@media (width <= 805px) {
+  button {
+    font-size: 1rem;
+    min-width: 100%;
+  }
+
+  #display-timer {
+    font-size: 4rem;
+  }
+
+  .stopwatch-buttons {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (width <= 500px) {
+  .stopwatch {
+    min-width: 80%;
+  }
+  button {
+    font-size: 1rem;
+    min-width: 100%;
+  }
+
+  .stopwatch-buttons {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
