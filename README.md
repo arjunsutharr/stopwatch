@@ -1,4 +1,4 @@
-# stopwatch⏱️
+# Stopwatch⏱️
 
 A simple, sleek, and responsive stopwatch built with HTML, CSS, and JavaScript.
 
@@ -42,7 +42,7 @@ Arjun
 
 ### Additional Note
 
-The stopwatch has a precision of 10 milliseconds.
+The Stopwatch has a precision of 10 milliseconds.
 The lap list can be cleared by clicking the "Reset" button.
 The website is optimized for modern browsers.
 
