@@ -64,14 +64,10 @@ function updateDisplay() {
     ":" +
     formatTime(seconds) +
     ":" +
-    formatMiliseconds(miliseconds);
+    formatTime(miliseconds);
 }
 
 function formatTime(time) {
-  return time < 10 ? "0" + time : time;
-}
-
-function formatMiliseconds(time) {
   return time < 10 ? "0" + time : time;
 }
 
